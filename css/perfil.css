@@ -1,6 +1,6 @@
 /* --------------- VARIABLES GLOBALES --------------- */
 
- :root {
+:root {
     --primary-color: #647E92;
     --Nav-Color: #AF6894;
     --secondary-color: #455970;
@@ -91,7 +91,8 @@ h3 {
 }
 
 p {
-    text-align: center;
+    font-size: 14px;
+    text-align: justify;
     padding: 10px;
 }
 
