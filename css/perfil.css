@@ -134,6 +134,7 @@ p {
     text-align: center;
     position: relative;
     border: 3px solid var(--Nav-Color);
+    border-radius: 15px;
 }
 
 .rectangulo {
@@ -146,6 +147,13 @@ p {
     display: inline-block;
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
+}
+
+.separador :hover {
+    border: 3px solid #647e92;
+    width: 100%;
+    color: #fff;
+    background-color: var(--Nav-Color);
 }
 
 
@@ -256,7 +264,7 @@ p {
 /* Botones de las flechas */
 
 .flecha {
-    background-color: #647e92;
+    background-color: var(--Nav-Color);
     color: white;
     font-size: 30px;
     border: none;
@@ -277,7 +285,7 @@ p {
 }
 
 .flecha:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #7fd7e39f;
 }
 
 

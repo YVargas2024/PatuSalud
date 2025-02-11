@@ -59,7 +59,7 @@
             <div class="card">
                 <div class="card-header">
                     <h2 id="form-title">Iniciar Sesión</h2>
-                    <button class="dark-mode-button" onclick="toggleDarkMode()">🌙</button>
+
                 </div>
                 <p class="card-description" id="form-description">Ingresa tus credenciales para acceder</p>
 
@@ -74,7 +74,10 @@
                     </div>
                     <div class="input-group">
                         <label for="password">Contraseña</label>
-                        <input id="password" type="password" required oninput="checkPasswordStrength()" />
+                        <div class="password-container">
+                            <input id="password" type="password" required oninput="checkPasswordStrength()" />
+                            <span class="toggle-password" id="toggle-password" onclick="togglePasswordVisibility('password')">👁️</span>
+                        </div>
                         <div class="password-strength" id="password-strength"></div>
                     </div>
                     <button class="submit-btn" type="submit">Iniciar Sesión</button><br><br>
@@ -98,12 +101,18 @@
                         </div>
                         <div class="input-group">
                             <label for="register-password">Contraseña</label>
-                            <input id="register-password" type="password" required oninput="checkPasswordStrength()" />
+                            <div class="password-container">
+                                <input id="register-password" type="password" required oninput="checkPasswordStrength()" />
+                                <span class="toggle-password" id="toggle-register-password" onclick="togglePasswordVisibility('register-password')">👁️</span>
+                            </div>
                             <div class="password-strength" id="register-password-strength"></div>
                         </div>
                         <div class="input-group">
                             <label for="confirm-password">Verificar Contraseña</label>
-                            <input id="confirm-password" type="password" required oninput="checkPasswordMatch()" />
+                            <div class="password-container">
+                                <input id="confirm-password" type="password" required oninput="checkPasswordMatch()" />
+                                <span class="toggle-password" id="toggle-confirm-password" onclick="togglePasswordVisibility('confirm-password')">👁️</span>
+                            </div>
                             <div class="error-message" id="password-error">Las contraseñas no coinciden</div>
                         </div><br>
                         <button class="submit-btn" type="submit">Registrarse</button><br><br>
